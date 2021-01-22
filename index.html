@@ -17,22 +17,29 @@
         </nav>
       </div>
     <div class="container">
-       <button onClick="controlformProduto()" type="button" class="btn btn-primary">Adicionar Tarefa</button>
-    
-
-        <div id="formProduto" style="display: none;">
-            <form>
-                <div class="mb-3">
-                <label for="produtoDescricao" class="form-label">Descrição</label>
-                <input type="text" class="form-control" id="produtoDescricao" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                <label for="produtoQuantidade" class="form-label">Quantidade</label>
-                <input type="number" class="form-control" id="produtoQuantidade">
-                </div>            
-                <button type="buton" onclick="cadastraProduto()" class="btn btn-primary">Adicionar</button>
-            </form>
-        </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Número do chamado</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Data</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Atendimento ao usuário.</td>
+            <td>Atender usuário João do Setor do RH, monitor nao está funcionando.</td>
+            <td>10:30 22/01/2021</td>
+            <td>em andamento</td>
+            <td>Editar</td>
+          </tr>
+          
+        </tbody>
+      </table>
     </div>
 
 
