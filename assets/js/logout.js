@@ -1,5 +1,11 @@
-const handleLogout = () => {
-    window.localStorage.clear();
-    window.location.reload(true);
-    window.location.replace('/login.html');
-  };
+function logout() {
+
+    document.getElementById('sair').click(
+
+        function (){
+            Parse.User.logOut();               
+            var currentUser = Parse.User.current();
+            window.location.replace("./login.html");              
+        }          
+    );
+}
